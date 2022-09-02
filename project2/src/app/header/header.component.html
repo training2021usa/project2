@@ -1,2 +1,6 @@
 <p>header works!</p>
 <header style="background-color: #3f51b5;height: 40px;">{{message}}</header>
+
+<label for="item-input">Add an item:</label>
+<input type="text" id="item-input" #newItem>
+<button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>
